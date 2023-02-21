@@ -142,10 +142,15 @@
 # lts = ["one", "two", "three"]
 # print(dict(lts))  # Преобразить в словарь нельзя
 
-a = [
-    ('one', 1),
-    ('two', 2),
-    ('three', 3)
-]
+# a = [
+#     ('one', 1),
+#     ('two', 2),
+#     ('three', 3)
+# ]
+#
+# print(dict(a))
 
-print(dict(a))
+
+# d = {i: input("->") for i in range(3)}
+d = {input("n = "): input("-> ") for i in range(3)}
+print(d)

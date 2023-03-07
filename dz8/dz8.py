@@ -24,7 +24,7 @@
 
 # Задача 2
 
-from random import randint
+# from random import randint
 
 
 # def zna(n):
@@ -36,14 +36,27 @@ from random import randint
 #     return True
 #
 #
-# a = [randint(1, 20) for i in range(0, 10)]
+# x = [6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1]
+# a = zna(x)
 #
 # print(a)
+#
+# # def zna(lts):
+# #     return lts
+# #
+#
+# x = zna([6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1])
+# print(x)
 
 
-def zna(lts):
-    return lts
+def fn(lts):
+    v = min(lts)
+    return v
 
 
-x = zna([randint(1, 20) for i in range(0, 10)])
-print(x)
+s = [6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1]
+print(s)
+fn(s)
+
+
+данн список целых чисел. Найти минимальное среди простых чисел и максимальное среди чисел не являющихся простыми

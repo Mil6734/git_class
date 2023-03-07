@@ -197,5 +197,42 @@
 # print(u"Привет")
 
 
-print("C:\\folder\\file.txt")
-print(r"C:\folder\file.txt")
+# print("C:\\folder\\file.txt")
+# print(r"C:\folder\file.txt")
+# print(r"C:\folder\file\\"[:-1])
+# print(r"C:\folder\file" + '\\')
+# print("C:\\folder\\file\\")
+
+# name = "Дмитрий"
+# age = 25
+# print("ME name ", name, ".", " Me ", age, " year", sep="")
+# print("ME name " + name + ".", "Me " + str(age) + " year")
+# print(f"ME name {name}. Me {age} year")
+
+
+# from math import pi
+#
+# print(f"Число PI: {pi}")
+# print(f"Число PI: {round(pi, 2)}")
+# print(f"Число PI: {pi:.2f}")
+
+
+# x = 10
+# y = 5
+# print(f"{x=}, {y=}")
+# print(f"({x} x {y}) / 2 = {x * y / 2}")
+
+
+# dir_name = 'my_doc'
+# file_name = 'data.txt'
+# print(fr'home\{dir_name}\{file_name}')
+
+import math
+
+
+def cyl(r, h):
+    n = 2 * math.pi * r * (r + h)
+    return n
+
+
+print(cyl(2, 4))

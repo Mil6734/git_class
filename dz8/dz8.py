@@ -24,39 +24,23 @@
 
 # Задача 2
 
-# from random import randint
-
-
-# def zna(n):
-#     if n <= 1:
-#         return False
-#     for i in range(2, n):
-#         if n % i == 0:
-#             return False
-#     return True
-#
-#
-# x = [6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1]
-# a = zna(x)
-#
-# print(a)
-#
-# # def zna(lts):
-# #     return lts
-# #
-#
-# x = zna([6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1])
-# print(x)
-
-
-def fn(lts):
-    v = min(lts)
-    return v
-
-
 s = [6, 3, 8, 5, 7, 9, 3, 6, 5, 13, 1]
-print(s)
-fn(s)
 
 
-данн список целых чисел. Найти минимальное среди простых чисел и максимальное среди чисел не являющихся простыми
+def check(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+prime_num = [num for num in s if check(num)]
+non_prime = [num for num in s if not check(num)]
+
+min_num = min(prime_num)
+max_num = max(non_prime)
+
+print("Min: ", min_num)
+print("Max: ", max_num)

@@ -100,3 +100,9 @@ import os.path
 #     print(f"{name} ({d}), -last access time {os.path.getmtime(file_path)} sec")
 # else:
 #     print("File is not exist")
+
+
+class Point:
+    x = 1
+    y = 1
+

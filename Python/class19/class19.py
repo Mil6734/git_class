@@ -3,6 +3,7 @@
 import os
 import os.path
 
+
 # print("Текущая директория:", os.getcwd())  # C:\pythonMy\myProject\git_class\class19
 # print(os.listdir())  # возвращает имена файлов и папок из текущей директории
 # print(os.listdir(".."))  # На уровень выше
@@ -102,7 +103,32 @@ import os.path
 #     print("File is not exist")
 
 
+# class Point:
+#     """Класс для предоставления координат точки плоскости"""
+#     x = 1
+#     y = 1
+#
+#
+# p1 = Point()
+# Point.x = 100
+# p1.x = 30
+# print(p1.x)
+# print(p1.__dict__)
+#
+# # p2 = Point()
+# # print(p2.x)
+
+
 class Point:
     x = 1
     y = 1
 
+    def set_coord(self):
+        print(self.__dict__)
+
+
+p1 = Point()
+p1.x = 5
+p1.y = 10
+p1.set_coord()
+# Point.set_coord(p1)

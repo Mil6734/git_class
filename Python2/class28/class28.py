@@ -201,3 +201,4 @@ st1.add_mark(4)
 print(st1)
 st1.del_mark(2)
 print(st1)
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Каталог курсов
+{%endblock%}
+
+{% block content %}
+<h1>Pricing</h1>
+{% if tasks|length < 1 %}
+<h4 class="center">Курсов нет. Добавьте курс !</h4>
+{% else %}
+<div class="block">
+    {% for task in tasks %}
+    <div class="product">
+        <h2>{{task.title}}</h2>
+        <div class="price">{{task.price}} руб/мес</div>
+        <p>{{task.content}}</p>
+        <button class="button">Купить</button>
+    </div>
+    {%endfor%}
+</div>
+{% endif %}
+{%endblock%}

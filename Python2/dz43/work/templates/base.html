@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<ul class="mainmenu">
+    <li><a href="{{url_for('index')}}">Каталог курсов</a></li>
+    <li><a href="{{url_for('content')}}">Добавить курс</a></li>
+    <li><a href="{{url_for('information')}}">Информация</a></li>
+</ul>
+
+<div class="content">
+{% block content %}
+
+</div>
+{%endblock%}
+</body>
+</html>

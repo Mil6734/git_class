@@ -1,0 +1,32 @@
+body{
+    background: yellow;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: orange;
+    padding: 20px;
+    margin-top: 0;
+}
+.content{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.success{
+    border: 1px solid green;
+    background: #aeffc5;
+
+}
+.error{
+    border: 1px solid red;
+    background: #ff9c9c;
+
+}
+.flash{
+    padding: 10px;
+}

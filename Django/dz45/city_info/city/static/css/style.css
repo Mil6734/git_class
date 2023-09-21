@@ -1,0 +1,44 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background: aqua;
+}
+.img {
+    text-align: center;
+    margin-top: 20px;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.text{
+    width: 360px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.block img{
+    width: 320px;
+    height: 261px;
+    margin-bottom: 25px;
+    float:inline-end; 
+}
+.img + h2, .text h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.element, .count{
+    background: #fff;
+    border: 3px solid #FFF;
+    margin: 55px auto;
+}
+.text p{
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #4a0505;
+    
+}

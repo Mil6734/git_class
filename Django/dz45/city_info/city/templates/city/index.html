@@ -1,0 +1,21 @@
+{% extends 'city/base.html' %}
+{% load static %}
+
+{%block content%}
+<div class="img">
+    <img src="{% static 'city/city.png' %}" alt="">
+</div>
+<h2>Домашнее задание</h2>
+<div class="block">
+    {% for i in city %}
+    <div class="element">
+        <div class="text">
+            <h2>{{i.title}}</h2>
+            <div><img src="{{i.image.url}}" alt=""></div>
+            <p>{{i.description}}</p>
+        </div>
+    </div>
+
+    {%endfor%}
+</div>
+{%endblock%}
